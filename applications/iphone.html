@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1a23e688b.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>MyRepair - Hjælp</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1009563828725481512/1018838440168669276/unknown.png">
+  </head>
+<body>
+    
+    <section class="hero">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">   
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img class="nav-logo" src="../img/unknown.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="../index.html">Hjem</a></li>
+                    <li class="nav-item"><a href="../rules.html">FAQ</a></li>
+                    <li class="nav-item"><a href="../applications.html">Hjælp</a></li>
+                    <li class="nav-item"><a href="../staffs.html">Om os</a></li>
+                    <li class="nav-item"><a href="https://discord.gg/aVF9caB7Jb">Discord</a></li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <h1 class="rules-h1">Iphone Hjælp</h1>
+    </section>
+
+    <section class="applications">
+      <form class="application-form">
+        <div class="form-group mb-4">
+          <label>Email</label>
+          <input type="text" id="police1" class="form-control">
+        </div>
+        <div class="form-group mb-4">
+          <label>Hvilken model har du?</label>
+          <input type="text" class="form-control" id="police2">
+        </div>
+        <div class="form-group mb-4">
+          <label>Hvornår er den købt? (f.eks. 21/12/2022)</label>
+          <input type="text" class="form-control" id="police3">
+        </div>
+
+        <div class="form-group mb-4">
+          <label>Hvilken type garanti er købt med på produktet?</label>
+          <textarea id="police4" class="form-control"></textarea>
+        </div>
+        <div class="form-group mb-4">
+            <label>Hvad er det på produktet som skal repaeres</label>
+            <textarea id="police5" class="form-control"></textarea>
+        </div>
+        <div class="form-group mb-4">
+          <label>Hvornår opstår dit problem?
+          </label>
+          <textarea id="police6" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group mb-4">
+          <label>SPØRGSMÅL </label>
+          <textarea id="police7" class="form-control"></textarea>
+        </div>
+        <div class="form-group mb-4">
+          <label>SPØRGSMÅL </label>
+          <textarea id="police8" class="form-control"></textarea>
+        </div>
+        <div class="form-group mb-4">
+          <label>SPØRGSMÅL </label>
+          <textarea id="police9" class="form-control"></textarea>
+        </div>
+        <div class="form-group mb-4">
+          <label>SPØRGSMÅL </label>
+          <textarea id="police10" class="form-control"></textarea>
+        </div>
+
+        <label>Afkryds venligst feltet nedenfor for at fortsætte</label>
+        <div class="form-check mb-4">
+          <input class="form-check-input" id="police12" type="checkbox" value="">
+          <label class="form-check-label" for="flexCheckDefault">
+          Terms of Service
+          </label>
+        </div>
+
+        <button class="btn btn-primary" id="insert1" type="submit">Indsend Rapport</button>
+      </form>
+    </section>
+
+    <footer class="page-footer font-small">
+
+        <div class="footer-copyright text-center py-3">
+          Copyright © Alle retigheder forbeholdes <a href="/"> myrepair.dk </a> - 2022
+        </div>
+      
+    </footer>
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!-- JS File -->
+    <script src="../js/main.js"></script>
+    <!-- Notify -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+.applications{
+    padding: 2em;
+    width: 100%;
+    height: auto;
+    background: $info-section;
+
+    .application-h1{
+        color: $mainColor;
+        font-size: 3em;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .line{
+        height: 3px;
+        width: 70%;
+        margin: 0em auto 2em;
+        background: $mainColor;
+    }
+
+    .flex-applications{
+        padding: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+        flex-wrap: wrap;
+
+        .application{
+            background: $whitelist-section;
+            text-align: center;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.459);
+            width: 350px;
+            height: 400px;
+
+            h1{
+                font-size: 1.9em;
+                margin: 0.7em;
+                color: $pTextColor;
+            }
+
+            img{
+                margin-top: 1em;
+                width: 60%;
+                height: 55%;
+            }
+
+            button{
+                border: none;
+                background: none;
+                border: 2px solid $mainColor;
+                box-shadow: 0 0 5px $mainColor;
+                color: $whiteColor;
+                margin-top: 0.5em;
+                width: 75%;
+                height: 45px;
+                transition: all 0.4s ease;
+            }
+            button:hover{
+                background: $mainColor;
+            }
+        }
+    }
+
+    .application-form{
+        padding: 2em;
+        width: 50%;
+        margin: auto;
+
+        label {
+            color: $whiteColor;
+        }
+    }
+}
+

@@ -1,0 +1,64 @@
+.signup, .login{
+    padding: 2em;
+    width: 100%;
+    height: auto;
+    background: $info-section;
+
+    .signup-form{
+        margin: auto;
+        max-width: 25%;
+        margin-bottom: 1.5em;
+        display: flex;
+        flex-direction: column;
+
+        label{
+            text-align: left;
+            padding: 1em 0em 1em 0;
+            color: $pTextColor;
+            font-size: 1.2em;
+        }
+
+        input{
+            border-radius: 10px;
+            padding: 10px;
+            color: $pTextColor;
+            background: none;
+            min-width: 25%;
+            outline: none;
+            border: none;
+            box-shadow: 0 0 10px rgba(0,0,0,0.459);
+        }
+
+        input:focus{
+            box-shadow: 0 0 10px $mainColor;
+        }
+
+        button{
+            border: none;
+            background: none;
+            border: 2px solid $mainColor;
+            box-shadow: 0 0 5px $mainColor;
+            color: $whiteColor;
+            margin-top: 1em;
+            height: 45px;
+            transition: all 0.4s ease;
+        }
+        button:hover{
+            background: $mainColor;
+        }
+    }
+}
+
+.login{
+    height: 65vh;
+}
+
+@media screen and (max-width: 1024px){
+    .signup-form{
+        align-items: center;
+
+        button{
+            width: 150%;
+        }
+    }
+}

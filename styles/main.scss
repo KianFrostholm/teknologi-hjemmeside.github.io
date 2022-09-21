@@ -1,0 +1,350 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import 'colors';
+@import 'rules';
+@import 'staffs';
+@import 'applications';
+@import 'signup';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+    body{
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #191c20;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: $mainColor;
+      border-radius: 30px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #17916e;
+    }
+
+    nav{
+        padding: 0 3%;
+        background: $navBackground;
+        .navbar {
+            width: 100%;
+        }
+        .nav-logo{
+            width: 60px;
+        }
+        .nav-item a{
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            color: $whiteColor;
+            padding-left: 2em;
+            cursor: pointer;
+        }
+        .active{
+            color: $mainColor !important;
+        }
+        .nav-item a::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            background-color: $mainColor;
+            margin: auto;
+            display: block;
+        }
+        .nav-item a:hover::after{
+            width: 100%;
+            transition: width 0.3s linear;
+        }
+        .nav-item a:hover{
+            color: $mainColor;
+        }
+        .login-btn{
+            width: 120px;
+            height: 40px;
+            background: $mainColor;
+            color: $whiteColor;
+            border: none;
+            border-radius: 5px;
+            margin: 0.5em;
+            box-shadow: 0 0 4px $mainColor;
+            cursor: pointer;
+        }
+        .signup-btn{
+            width: 120px;
+            height: 40px;
+            background: none;
+            color: $whiteColor;
+            border: 2px solid $mainColor;
+            border-radius: 5px;
+            margin: 0.5em;
+            box-shadow: 0 0 4px $mainColor;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+        .signup-btn:hover{
+            background: $mainColor;
+        }
+    }
+
+    .hero{
+        background-image: linear-gradient($background-image, $background-image), url("../img/hero.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: auto;
+        padding-bottom: 0.5em;
+        .hero-text{
+            margin: 10em;
+            h1{
+                color: $mainColor;
+                font-size: 5em;
+            }
+            h2{
+                color: $whiteColor;
+                font-size: 3em;
+            }
+            .little-info{
+                margin-top: 1.5em;
+                max-width: 180px;
+                border-left: 4px solid $whiteColor;
+                border-radius: 2px;
+                p{
+                    font-size: 15px;
+                    color: $pTextColor;
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
+
+    .info-boxes{
+        width: 100%;
+        height: auto;
+        padding: 3em;
+        background: $info-section;
+        .boxes{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5em;
+            .box{
+                padding: 1em;
+                text-align: center;
+                width: 320px;
+                height: 375px;
+                box-shadow: 0 0 3px rgba(0,0,0,0.459);
+                i{
+                    padding: 15px;
+                    font-size: 3em;
+                    color: $mainColor;
+                }
+                h1{
+                    padding: 10px;
+                    font-size: 1.7em;
+                    color: $whiteColor;
+                }
+                p{
+                    color: $pTextColor;
+                }
+            }
+        }
+    }
+
+    .whitelist-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+        width: 100%;
+        height: auto;
+        padding: 3em;
+        background: $whitelist-section;
+        img{
+            width: 550px;
+        }
+        .whitelist-box{
+            box-shadow: 0 0 10px rgba(0,0,0,0.459);
+            border-radius: 7px;
+            padding: 2em;
+            text-align: center;
+            width: 500px;
+            height: 350px;
+            background: $whitelist-box;
+            h1{
+                color: $mainColor;
+                font-size: 2em;
+                text-shadow: 2px 2px #000;
+            }
+            img {
+                padding-top: 2em;
+                width: 130px;
+            }
+            p{
+                padding-top: 1.2em;
+                font-size: 1.6em;
+                color: $pTextColor;
+                text-shadow: 2px 2px #000;
+            }
+
+        }
+    }
+
+    footer{
+        margin-top: auto;
+        color: #fff;
+        letter-spacing: 0.3px;
+        background: $footer-color;
+        box-shadow: 0 0 6px rgba(0,0,0,0.459);
+        color: #fff;
+    }
+    footer a {
+        color: rgb(204, 204, 204);
+        text-decoration: none;
+    }
+    
+    footer a:hover{
+        color: rgb(204, 204, 204);
+        text-decoration: underline;
+    }
+
+    .contact-section{
+        width: 100%;
+        height: auto;
+        padding: 3em;
+        background: $contact-section;
+
+        .contact-info{
+            max-width: 40%;
+            margin: auto;
+            text-align: center;
+            h1{
+                color: $mainColor;
+            }
+            h2{
+                color: $whiteColor;
+            }
+            p{
+                color: $pTextColor;
+            }
+        }
+
+        .contact-form{
+            margin: auto;
+            max-width: 30%;
+            margin-bottom: 1.5em;
+            display: flex;
+            flex-direction: column;
+
+            label{
+                text-align: left;
+                padding: 1em 0em 1em 0;
+                color: $pTextColor;
+                font-size: 1.2em;
+            }
+    
+            input{
+                border-radius: 10px;
+                padding: 10px;
+                color: $pTextColor;
+                background: none;
+                min-width: 25%;
+                outline: none;
+                border: none;
+                box-shadow: 0 0 10px rgba(0,0,0,0.459);
+            }
+
+            textarea{
+                border-radius: 10px;
+                padding: 10px;
+                color: $pTextColor;
+                background: none;
+                min-width: 25%;
+                height: 10em;
+                resize: none;
+                outline: none;
+                border: none;
+                box-shadow: 0 0 10px rgba(0,0,0,0.459); 
+            }
+
+            textarea:focus{
+                box-shadow: 0 0 10px $mainColor;
+            }
+    
+            input:focus{
+                box-shadow: 0 0 10px $mainColor;
+            }
+    
+            button{
+                border: none;
+                background: none;
+                border: 2px solid $mainColor;
+                box-shadow: 0 0 5px $mainColor;
+                color: $whiteColor;
+                margin-top: 1em;
+                height: 45px;
+                transition: all 0.4s ease;
+            }
+            button:hover{
+                background: $mainColor;
+            }
+        }
+    }
+}
+
+// Media Queries
+
+@media screen and (max-width: 768px){
+    .hero{
+        .hero-text{
+            margin: 4em;
+            h1{
+                color: $mainColor;
+                font-size: 3em;
+            }
+            h2{
+                color: $whiteColor;
+                font-size: 1.7em;
+            }
+        }
+    }
+    .boxes, .whitelist-info{
+        flex-direction: column;
+        .whitelist-box{
+            width: 320px;
+        }
+    }
+    .whitelist-info img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contact-info{
+        max-width: 150%;
+    }
+    .contact-form{
+        align-items: center;
+        max-width: 50%;
+
+        button{
+            width: 150%;
+        }
+    }
+}

@@ -1,7 +1,6 @@
 $(function(){
 
     let config = {
-        cfx: "le6gq5",
         policewebhook: "https://discord.com/api/webhooks/1019131570398957591/hZ4uiKa8P_bOfp0MH-WXQs8Fn8z1Gs5TtQNMUOrEEh5w4gSN12TMkg8HBdnZ4F0nPKa1",
         emswebhook: "https://discord.com/api/webhooks/1019131570398957591/hZ4uiKa8P_bOfp0MH-WXQs8Fn8z1Gs5TtQNMUOrEEh5w4gSN12TMkg8HBdnZ4F0nPKa1",
         mechanicwebhook: "https://discord.com/api/webhooks/1019131570398957591/hZ4uiKa8P_bOfp0MH-WXQs8Fn8z1Gs5TtQNMUOrEEh5w4gSN12TMkg8HBdnZ4F0nPKa1",
